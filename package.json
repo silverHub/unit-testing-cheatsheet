@@ -12,6 +12,8 @@
     "react-scripts": "3.4.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "react-test-renderer": "^16.14.0",
     "typescript": "3.8.3"
   },
   "scripts": {
