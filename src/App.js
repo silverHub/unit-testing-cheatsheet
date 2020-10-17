@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import useItems from "./useItems";
+import useItems from "./useItemsTimeout";
 import "./styles.css";
 
 export default function App() {

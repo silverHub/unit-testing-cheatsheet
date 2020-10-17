@@ -1,4 +1,4 @@
-import useItems from './useItems';
+import useItems from './useItemsTimeout';
 import {renderHook, act} from '@testing-library/react-hooks';
 
 describe('custom hook with setTimeout', () => {
