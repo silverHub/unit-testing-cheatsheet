@@ -1,11 +1,6 @@
 import { useState, useEffect } from "react";
+import { initialItems } from './testData';
 
-const initialItems = [
-  { id: "1", text: "strawberry" },
-  { id: "2", text: "pear" },
-  { id: "3", text: "apple" },
-  { id: "4", text: "grape" }
-];
 
 const getItems = () => {
   return new Promise((res, rej) => {

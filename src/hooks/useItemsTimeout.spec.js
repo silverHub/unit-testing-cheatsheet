@@ -1,5 +1,6 @@
 import useItems from "./useItemsTimeout";
 import { renderHook, act } from "@testing-library/react-hooks";
+import { initialItems } from './testData';
 
 describe("custom hook with setTimeout", () => {
   test("init", async () => {
@@ -13,23 +14,6 @@ describe("custom hook with setTimeout", () => {
     await waitForNextUpdate();
 
     // setItem triggered, hook returns with proper value
-    expect(result.current.items).toEqual([
-      {
-        id: "1",
-        text: "strawberry",
-      },
-      {
-        id: "2",
-        text: "pear",
-      },
-      {
-        id: "3",
-        text: "apple",
-      },
-      {
-        id: "4",
-        text: "grape",
-      },
-    ]);
+    expect(result.current.items).toEqual(initialItems);
   });
 });

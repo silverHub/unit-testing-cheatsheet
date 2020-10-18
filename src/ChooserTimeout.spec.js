@@ -11,7 +11,6 @@ describe("example unit tests for hook based components", () => {
   });
 
 test("component rendered first with empty items", () => {
-  expect(screen.getByText("Select your choice")).toBeInTheDocument();
   expect(screen.getByText("Selected:")).toBeInTheDocument();
   
 });
