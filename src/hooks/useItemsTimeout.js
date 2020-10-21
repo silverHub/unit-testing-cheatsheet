@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { initialItems } from './testData';
+import { initialItems } from '../mocks/testData';
 
 
 const getItems = () => {

@@ -28,7 +28,7 @@ const ChooserTimeout = () => {
             <span key={selected.id}>{selected.text}</span>
           ))}
       </section>
-      <section>
+      <section data-testid="items">
         {items
           .filter((item) => item.text.match(searchTerm))
           .map(({ id, text, selected = false }) => (

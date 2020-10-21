@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const URL = "http://api/server/endpoint";
+export const URL = "/api/fruits";
 
 const getItems = () => {
   return window.fetch(URL).then((resp) => resp.json());
