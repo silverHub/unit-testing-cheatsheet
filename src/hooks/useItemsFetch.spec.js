@@ -1,6 +1,6 @@
 import useItems, { URL } from "./useItemsFetch";
 import { renderHook, act } from "@testing-library/react-hooks";
-import { initialItems } from "./testData";
+import { initialItems } from "../mocks/testData";
 
 /*
   As fetch is not available in node env -> we should mock it.

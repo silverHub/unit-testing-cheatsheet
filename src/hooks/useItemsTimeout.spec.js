@@ -1,6 +1,6 @@
 import useItems from "./useItemsTimeout";
 import { renderHook, act } from "@testing-library/react-hooks";
-import { initialItems } from './testData';
+import { initialItems } from '../mocks/testData';
 
 describe("custom hook with setTimeout", () => {
   test("init", async () => {
