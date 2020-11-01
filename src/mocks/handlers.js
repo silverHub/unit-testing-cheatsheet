@@ -3,6 +3,6 @@ import { initialItems } from "../mocks/testData";
 
 export const handlers = [
   rest.get("/api/fruits", (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json(initialItems));
+    return res(ctx.status(200), ctx.json(initialItems), ctx.delay(1000));
   }),
 ];
